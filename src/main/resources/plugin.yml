@@ -1,0 +1,8 @@
+name: PlayerProfile
+version: '0.1'
+main: org.adlin.playerProfile.Main
+api-version: '1.21'
+load: STARTUP
+commands:
+  profile:
+    aliases: ["playerprofile", "pp", "p"]
