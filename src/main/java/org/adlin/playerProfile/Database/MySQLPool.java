@@ -85,7 +85,7 @@ public class MySQLPool {
     }
 
      public void createPlayerProfile(String playerName) throws SQLException {
-         String query = "INSERT INTO player_profiles (player_nam) VALUES (?)";
+         String query = "INSERT INTO player_profiles (player_name) VALUES (?)";
          try (Connection connection = getConnection();
               PreparedStatement statement = connection.prepareStatement(query)) {
              statement.setString(1, playerName);
